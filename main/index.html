@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyLux</title>
+
+    <!--external links-->
+    <link rel="icon" type="image/x-icon" href="./pageicon.jpg">
+    <link rel="stylesheet" href="./style/style.css">
+    
+    <!--link to awsome fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <!--header-->
+  <div class="navbar-section" id="header">
+    <img class="header-logo" src="../image/logo.png" alt="logo" width="340px">
+    <ul class="navbar">
+      <div class="nav-MainB">
+          <li>
+            <a href="index.html">
+              <input class="btn btn-primary" type="button" value="Home">
+            </a>
+          </li>
+          <li>
+            <input class="btn btn-primary" type="button" value="About" id="aboutbutt">
+          </li>
+          <li>
+            <input class="btn btn-primary" type="button" value="Service" id="servicesbutt">
+          </li>
+          <li>
+            <input class="btn btn-primary" type="button" value="Features" id="featuresbutt">
+          </li>
+          <li>
+            <input class="btn btn-primary" type="button" value="Contact" id="contactbutt">
+          </li>
+        </div>
+         <!--   Login Button
+          <div class="btn-wrapper">
+            <div class="nav-login">
+              <li class="login-btn">
+                <a class="btn-book" href="../login/index.html"><b></b>Login</b></a>
+              </li>
+            </div>
+          </div>
+        -->
+    </ul>
+  </div>
+    <div class="h1-top">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-jet-fighter"></i>
+            </div>
+            <h1 id="mainPage">SkyLux</h1>
+
+        </div>
+        <br>
+        <h3>We are proud hosting Luxury Flights</h3>
+        <h3>It is been 1 decade where we started out own operations,
+            follow up the page to know about us!
+        </h3>
+    </div>
+    <br>
+    <div class="btn-wrapper">
+        <a href="../booking/index.html" class="btn-book"><i class="fa-solid fa-book"></i> Book Now</a>
+    </div>
+    <!--Hero Section-->
+    <section class="hero" id="home">
+        <div class="content">
+            <h3>Best <span class="typing-text">Luxurious Flights</span></h3>
+            <p>
+                Welcome aboard SkyLux, where every journey transcends the ordinary to become an exquisite 
+                experience. From the moment you step into our exclusive lounges, you're enveloped in an 
+                atmosphere of unparalleled comfort and sophistication, setting the tone for an exceptional 
+                flight. Our state-of-the-art aircraft boast meticulously designed interiors, offering 
+                spacious suites and gourmet dining curated by world-renowned chefs, ensuring every detail 
+                caters to your highest expectations. With personalized service from our dedicated crew, 
+                your travel desires are anticipated and met with seamless grace. Choose SkyLux for an 
+                ascent into luxury, where your destination is just the beginning of an extraordinary 
+                adventure.
+            </p>
+
+    <section class="accordion" aria-label="Main accordion">
+      <!-- About -->
+      <div class="card card-1">
+        <button class="accordion-header" aria-expanded="false" aria-controls="panel-about" id="btn-about">
+          <span class="label">About</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div id="panel-about" class="accordion-panel" role="region" aria-labelledby="btn-about">
+          <!--about body-->
+          <div class="about-section" id="about-section">
+            <h2 class="about-heading">About Us<span></span></h2>
+            <div class="about-img">
+              <img src="../image/logo.png" alt="god-knows">
+              <span class="about-circle-spin"></span>
+            </div>
+            <div class="about-content">
+              <h3>Our first Mission & History</h3>
+              <p>The SkyLux 787, christened "Ascension," trembled slightly before its inaugural 
+                flight. Pilot Zara Khan, heart pounding, gripped the controls as the tower cleared 
+                them for takeoff. As the engines roared and the jet lifted off the runway, 
+                passengers cheered. It wasn't just a flight; it was the birth of an empire, soaring 
+                toward the clouds, leaving a glittering streak of ambition in its wake.</p>
+              <div class="btn-wrapper">
+                <!--link to booking-->
+                <a href="../booking/index.html" class="btn-book">Book Your Seat</a>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="card card-2">
+        <button class="accordion-header" aria-expanded="false" aria-controls="panel-services" id="btn-services">
+          <span class="label">Services</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div id="panel-services" class="accordion-panel" role="region" aria-labelledby="btn-services">
+          <!--service body-->
+          <div class="service-container">
+            <div class="service-wrapper">
+              <div class="service">
+                <h2>Our services<span></span></h2>
+                <div class="service-cards">
+                  <div class="service-card">
+                    <i class="fa-solid fa-mattress-pillow"></i>
+                    <h3>Air Transportation</h3>
+                    <p>Safely and efficiently transporting passengers and their checked baggage between 
+                      the scheduled departure and destination airports worldwide.</p>
+                  </div>
+                  <div class="service-card">
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <h3>Check-in and Ticketing</h3>
+                    <p>The essential process of issuing flight tickets, verifying passenger 
+                      documents, assigning seats, and accepting baggage at the airport or 
+                      online.</p>
+                  </div>
+                  <div class="service-card">
+                    <i class="fa-solid fa-drumstick-bite"></i>
+                    <h3>In-Flight Meals</h3>
+                    <p>Serving a variety of complimentary or purchased food, snacks, 
+                      and drinks to keep passengers comfortable and refreshed during 
+                      the flight.</p>
+                  </div>
+                  <div class="service-card">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3>In-Flight Entertainment</h3>
+                    <p>Providing on-demand movies, music, games, and internet access 
+                      through seat-back screens or personal devices for a comfortable 
+                      journey.</p>
+                  </div>
+                  <div class="service-card">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h3>Premium Seating</h3>
+                    <p>Offering upgraded cabins like Business or First Class with enhanced 
+                      amenities, spacious seating, and superior service for maximum 
+                      comfort.</p>
+                  </div>
+                   <div class="service-card">
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Airport Lounge Access</h3>
+                    <p>Exclusive access to private, quiet airport facilities featuring 
+                      complimentary food, beverages, and Wi-Fi before departure or during 
+                      layovers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features  -->
+      <div class="card card-3">
+        <button class="accordion-header" aria-expanded="false" aria-controls="panel-features" id="btn-features">
+          <span class="label">Features</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div id="panel-features" class="accordion-panel" role="region" aria-labelledby="btn-features">
+          
+          <!--feature sectoin body-->
+          <div class="feature-section" id="feature-section">
+            <h2 class="feature-heading">
+              Our Features <span></span>
+            </h2>
+            <div class="feature-row">
+              <div class="feature-column">
+                <h2 class="feature-title">On-Ground Experience</h2>
+
+                <div class="feature-box">
+                  <div class="feature-content">
+                    <div class="feature-subcontent">
+                      <div class="feature-year"><i class="fa-regular fa-calendar"></i> 2022-2023</div>
+                      <h3>Digital & Self-Service Check-In</h3>
+                      <p>A robust mobile app and website that allows passengers 
+                        to check in, select seats, and receive a digital boarding 
+                        pass without needing to interact with an agent or a 
+                        physical kiosk</p>
+                    </div>
+                  </div>
+                  <div class="feature-content">
+                    <div class="feature-subcontent">
+                      <div class="feature-year"><i class="fa-regular fa-calendar"></i> 2023-2024</div>
+                      <h3>Priority Security & Boarding</h3>
+                      <p>Offering dedicated, fast-track security lanes and a 
+                        clearly organized, expedited boarding process to 
+                        minimize waiting time and stress at the gate.</p>
+                    </div>
+                  </div>
+                  <div class="feature-content">
+                    <div class="feature-subcontent">
+                      <div class="feature-year"><i class="fa-regular fa-calendar"></i> 2024-2025</div>
+                      <h3>Real-Time Digital Baggage Tracking</h3>
+                      <p>Providing passengers with the ability to track their checked 
+                        luggage's location (e.g., via the airline's mobile app) 
+                        from check-in to final collection at the destination.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <div class="feature-column">
+                <h2 class="feature-title">In-Flight Experience</h2>
+
+                <div class="feature-box">
+                  <div class="feature-content">
+                    <div class="feature-subcontent">
+                      <div class="feature-year"><i class="fa-regular fa-calendar"></i> 2022-2023</div>
+                      <h3>High-Speed In-Flight Wi-Fi</h3>
+                      <p>Reliable, fast internet connectivity available for 
+                        the duration of the flight, supporting streaming and 
+                        work needs, often with an option for free basic 
+                        messaging.</p>
+                    </div>
+                  </div>
+                  <div class="feature-content">
+                    <div class="feature-subcontent">
+                      <div class="feature-year"><i class="fa-regular fa-calendar"></i> 2023-2024</div>
+                      <h3>High-Quality In-Seat Entertainment</h3>
+                      <p>A personal, large screen with an extensive, 
+                        constantly updated library of movies, TV shows, 
+                        and games, plus charging ports and noise-canceling 
+                        headphones.</p>
+                    </div>
+                  </div>
+                  <div class="feature-content">
+                    <div class="feature-subcontent">
+                      <div class="feature-year"><i class="fa-regular fa-calendar"></i> 2024-2025</div>
+                      <h3>Flexible Dining Options</h3>
+                      <p>Offering a variety of meal choices, including diverse dietary 
+                        options (vegetarian, vegan, gluten-free, etc.), high-quality 
+                        meals, and on-demand premium snack and beverage service.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact us-->
+      <div class="card card-4">
+        <button class="accordion-header" aria-expanded="false" aria-controls="panel-contact" id="btn-contact">
+          <span class="label">Contact us</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </button>
+        <div id="panel-contact" class="accordion-panel" role="region" aria-labelledby="btn-contact">
+          <div class="contactus-body">
+            <div class="contactus-container">
+              <div class="contactus-left">
+                <h3 class="contactus-heading">
+                  Get in touch
+                </h3>
+                <p class="contactus-text">
+                  We are here for you! 
+                  How can we help?
+                </p>
+                <form action="#">
+                  <div class="contactus-inputBox">
+                    <input type="text" name="name" class="contactus-name" placeholder="Enter your name">
+                  </div>
+                   <div class="contactus-inputBox">
+                    <input type="text" name="email" class="contactus-email" placeholder="Enter your email">
+                  </div>
+                   <div class="contactus-inputBox">
+                    <textarea name="messagebox" class="contactus-messagebox" placeholder="Enter your message..."
+                    ></textarea>
+                    </div>
+                    <button class="contactus-btn">Submit</button>
+                </form>
+              </div>
+              <div class="contactus-right">
+                <div class="contactus-illustration">
+                  <img src="../image/ContactUS1.png" alt="contactus" height="350" width="450">
+                </div>
+                <div class="contactus-infos">
+                  <div class="contactus-profile">
+                    <h4>
+                      <i class="fa-solid fa-user gold-icon"></i>
+                      <span class="contact-name">Joseph Yammine</span>
+                    </h4>
+                    <p>
+                      <i class="fa-solid fa-envelope gold-icon"></i>
+                      <a href="mailto:josephyammine06@gmail.com">josephyammine06@gmail.com</a><br>
+                      <i class="fa-solid fa-phone gold-icon"></i>
+                      <a href="tel:+96181275199">+961 81-275-199</a><br>
+                      <i class="fa-brands fa-github gold-icon"></i>
+                      <a href="https://github.com/ZuzuYamn" target="_blank">@ZuzuYamn</a>
+                    </p>
+                  </div>
+                  <div class="contactus-profile">
+                    <h4>
+                      <i class="fa-solid fa-user gold-icon"></i>
+                      <span class="contact-name">Andre Dib</span>
+                    </h4>
+                    <p>
+                      <i class="fa-solid fa-envelope gold-icon"></i>
+                      <a href="mailto:andredib27@gmail.com">andredib27@gmail.com</a><br>
+                      <i class="fa-solid fa-phone gold-icon"></i>
+                      <a href="tel:+96171780896">+961 71-780-896</a><br>
+                      <i class="fa-brands fa-github gold-icon"></i>
+                      <a href="https://github.com/SoSerious416" target="_blank">@SoSerious416</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        </div>
+        <div class="flight-contianer">
+            <div class="border-outer"></div>
+            <div class="border-middle"></div>
+            <div class="border-inner"></div>
+            <div class="border-container"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring"></div>
+            <img src="../image/logo.png" width="240px" alt="airline picture" class="airline-img" >
+        </div>
+
+        <!--external js link-->
+    <script src="./script/script.js"></script>
+</body>
+</html>

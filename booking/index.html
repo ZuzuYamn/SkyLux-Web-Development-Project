@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkyLux — Booking</title>
+  <link rel="icon" type="image/x-icon" href="../main/pageicon.jpg">
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+ <!--header-->
+    <div class="navbar-section">
+        <img class="header-logo" src="../image/logo.png" alt="logo" width="340px">
+        <div class="navbar">
+          <a href="../main/index.html" style="text-decoration: none;">                
+            <nav class="btn1 btn-primary">Main Menu</nav>
+          </a>
+        </div>
+          
+    </div>
+
+  <main class="container">
+    <section class="booking-card" aria-labelledby="booking-heading">
+      <h2 id="booking-heading">Book your flight</h2>
+
+      <form id="booking-form" class="form">
+        <fieldset class="fieldset-inline">
+          <legend>Ticket type</legend>
+          <label><input type="radio" name="ticketType" value="economy" checked /> Economy</label>
+          <label><input type="radio" name="ticketType" value="business" /> Business</label>
+          <label><input type="radio" name="ticketType" value="first" /> First Class</label>
+        </fieldset>
+
+        <fieldset class="fieldset-inline">
+          <legend>Trip</legend>
+          <label><input type="radio" name="tripType" value="oneway" checked /> Departure Only</label>
+          <label><input type="radio" name="tripType" value="round" /> Round Trip</label>
+        </fieldset>
+
+        <div class="row">
+          <label>
+            From
+            <select id="from-select" name="from" required aria-label="From">
+              <!--JS -->
+            </select>
+          </label>
+
+          <label>
+            To
+            <select id="to-select" name="to" required aria-label="To">
+              <!--JS -->
+            </select>
+          </label>
+        </div>
+
+        <div class="row">
+          <label>
+            Departure date
+            <input id="depart-date" name="depart" type="date" required />
+          </label>
+
+          <label id="return-label" class="hidden">
+            Return date
+            <input id="return-date" name="return" type="date" />
+          </label>
+
+          <label class="passenger-control">
+            Adults
+            <div class="counter" data-target="adults">
+              <button type="button" class="dec" aria-label="Decrease adults">−</button>
+              <input type="number" id="adults" name="adults" value="1" min="1" max="9" aria-live="polite" />
+              <button type="button" class="inc" aria-label="Increase adults">+</button>
+            </div>
+          </label>
+
+          <label class="passenger-control">
+            Minors
+            <div class="counter" data-target="minors">
+              <button type="button" class="dec" aria-label="Decrease minors">−</button>
+              <input type="number" id="minors" name="minors" value="0" min="0" max="9" aria-live="polite" />
+              <button type="button" class="inc" aria-label="Increase minors">+</button>
+            </div>
+          </label>
+        </div>
+
+        <div class="row meta-row">
+          <div class="selected-info" id="when-info">Departure: —</div>
+          <div class="selected-info" id="passenger-summary">1 adult · 0 minors</div>
+        </div>
+
+        <div class="actions">
+          <button id="search-btn" type="submit" class="btn primary">Search flights</button>
+          <button id="reset-btn" type="button" class="btn">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="results" aria-live="polite" id="results">
+      <!--JS -->
+    </section>
+  </main>
+
+  <script src="./script/script.js" type="module"></script>
+</body>
+</html>
